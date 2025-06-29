@@ -31,12 +31,12 @@ int	main()
 		{
 			if (count_contact < 8)
 				count_contact++;
-			i = (i + 1) % 8;
 			phonebook.add_contact(i);
+			i = (i + 1) % 8;
 		}
 		else if (command == "SEARCH")
 		{
-			std::cout << "|----------------------------------------|\n";
+			std::cout << "+-------------------------------------------+\n";
 			phonebook.show_contacts(count_contact);
 		}
 		else

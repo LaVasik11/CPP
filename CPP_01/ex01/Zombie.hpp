@@ -8,15 +8,16 @@ typedef std::string str;
 
 class Zombie {
 	public:
-		Zombie(str name);
+		Zombie();
 		~Zombie();
 
-		Zombie* newZombie(str name);
-		void	randomChump(str name);
+		void	setName(str name);
+		void	announce() const;
+
 	private:
-		void	announce();
 		str	name;
 };
 
+Zombie	*zombieHorde(int n, str name);
 
 #endif

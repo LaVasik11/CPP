@@ -6,7 +6,7 @@
 /*   By: gkankia <gkankia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/08 17:46:37 by gkankia           #+#    #+#             */
-/*   Updated: 2025/07/08 17:46:38 by gkankia          ###   ########.fr       */
+/*   Updated: 2025/07/08 17:56:52 by gkankia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,21 +17,20 @@
 
 int main()
 {
-    Weapon  weapon1("Glock 17");
-    Weapon  weapon2("Digle");
-
-    HumanA Bob("Bob", weapon1);
-    HumanB Bill("Bill");
-    Bill.setWeapon(&weapon2);
-
-    Bob.attack();
-    Bill.attack();
-
-    weapon1.setType("Knife");
-    weapon2.setType("AK-47");
-
-    Bob.attack();
-    Bill.attack();
-
-    return (0);
+    {
+        Weapon club = Weapon("crude spiked club");
+        HumanA bob("Bob", club);
+        bob.attack();
+        club.setType("some other type of club");
+        bob.attack();
+    }
+    {
+        Weapon club = Weapon("crude spiked club");
+        HumanB jim("Jim");
+        jim.setWeapon(&club);
+        jim.attack();
+        club.setType("some other type of club");
+        jim.attack();
+    }
+    return 0;
 }

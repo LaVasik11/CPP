@@ -5,12 +5,21 @@
 
 int main()
 {
-    Weapon  *weapon;
+    Weapon  weapon1("Glock 17");
+    Weapon  weapon2("Digle");
 
-    weapon->setType("Glock 17");
+    HumanA Bob("Bob", weapon1);
+    HumanB Bill("Bill");
+    Bill.setWeapon(&weapon2);
 
-    HumanA human1("Bob", weapon);
-    HumanB human2("Bill");
+    Bob.attack();
+    Bill.attack();
+
+    weapon1.setType("Knife");
+    weapon2.setType("AK-47");
+
+    Bob.attack();
+    Bill.attack();
 
     return (0);
 }

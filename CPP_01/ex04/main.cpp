@@ -5,7 +5,7 @@
 
 typedef std::string str;
 
-void	getNewLine(str &line, str s1, str s2) 
+void	replace(str &line, str s1, str s2) 
 {
 	size_t	startPos = 0;
 
@@ -36,7 +36,7 @@ int	main(int ac, char **av)
 	{
 		while (std::getline(input, line)) 
 		{
-			getNewLine(line, s1, s2);
+			replace(line, s1, s2);
 			output << line;
 			if (!input.eof())
 				output << std::endl;

@@ -5,7 +5,7 @@
 
 typedef std::string str;
 
-void	replace(str &line, str s1, str s2) 
+void	ft_replace(str &line, str s1, str s2) 
 {
 	size_t	startPos = 0;
 
@@ -32,11 +32,11 @@ int	main(int ac, char **av)
 	std::ifstream	input(file.c_str());
 	std::ofstream	output(out_file.c_str());
 	
-	if (input.is_open()) 
+	if (input.is_open())
 	{
-		while (std::getline(input, line)) 
+		while (std::getline(input, line))
 		{
-			replace(line, s1, s2);
+			ft_replace(line, s1, s2);
 			output << line;
 			if (!input.eof())
 				output << std::endl;

@@ -12,6 +12,26 @@ class Fixed {
 		Fixed(const int n);
 		Fixed(const float f);
 
+		Fixed			operator+(Fixed const &rSym) const;
+		Fixed			operator-(Fixed const &rSym) const;
+		Fixed			operator*(Fixed const &rSym) const;
+		Fixed			operator/(Fixed const &rSym) const;
+		bool			operator<(Fixed const &rSym) const;
+		bool			operator>(Fixed const &rSym) const;
+		bool			operator<=(Fixed const &rSym) const;
+		bool			operator>=(Fixed const &rSym) const;
+		bool			operator==(Fixed const &rSym) const;
+		bool			operator!=(Fixed const &rSym) const;
+		Fixed&			operator++();
+		Fixed			operator++(int);
+		Fixed&			operator--();
+		Fixed			operator--(int);
+
+		static Fixed &			min(Fixed &a, Fixed &b);
+		static Fixed &			max(Fixed &a, Fixed &b);
+		static Fixed const &	min(Fixed const &a, Fixed const &b);
+		static Fixed const &	max(Fixed const &a, Fixed const &b);
+
 		int		getRawBits() const;
 		void	setRawBits(int const raw);
 		float	toFloat() const;

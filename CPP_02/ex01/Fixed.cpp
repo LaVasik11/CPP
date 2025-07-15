@@ -49,16 +49,16 @@ void	Fixed::setRawBits(int const raw)
 
 float	Fixed::toFloat() const
 {
-	return (float)this->value / (float)(1 << bits);
+	return ((float)this->value / (float)(1 << bits));
 }
 
 int		Fixed::toInt() const
 {
-	return this->value >> bits;
+	return (this->value >> bits);
 }
 
 std::ostream&	operator<<(std::ostream& o, Fixed const &rSym)
 {
 	o << rSym.toFloat();
-	return o;
+	return (o);
 }

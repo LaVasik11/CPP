@@ -3,47 +3,37 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gkankia <gkankia@student.42.fr>            +#+  +:+       +#+        */
+/*   By: georgy-kankiya <georgy-kankiya@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 16:07:38 by gkankia           #+#    #+#             */
-/*   Updated: 2025/07/16 16:07:39 by gkankia          ###   ########.fr       */
+/*   Updated: 2025/07/17 13:28:37 by georgy-kank      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
 #include <math.h>
 
-Fixed::Fixed() : value(0) 
-{
-	std::cout << "Default constructor called" << std::endl;
-}
+Fixed::Fixed() : value(0) {}
 
-Fixed::~Fixed() 
-{
-	std::cout << "Destructor called" << std::endl;
-}
+Fixed::~Fixed() {}
 
 Fixed::Fixed(const int n) 
 {
-	std::cout << "Int constructor called" << std::endl;
 	this->value = n << bits;
 }
 
 Fixed::Fixed(const float f)
 {
-	std::cout << "Float constructor called" << std::endl;
 	this->value = roundf(f * (1 << bits));
 }
 
 Fixed::Fixed(Fixed const &src) 
 {
-	std::cout << "Copy constructor called" << std::endl;
 	*this = src;
 }
 
 Fixed&	Fixed::operator=(Fixed const &rSym)
 {
-	std::cout << "Copy assignment operator called" << std::endl;
 	if (this != &rSym)
 		this->value = rSym.getRawBits();
 	return (*this);

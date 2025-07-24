@@ -6,7 +6,7 @@
 /*   By: gkankia <gkankia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 15:17:01 by gkankia           #+#    #+#             */
-/*   Updated: 2025/07/24 15:59:04 by gkankia          ###   ########.fr       */
+/*   Updated: 2025/07/24 16:09:19 by gkankia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,17 +38,17 @@ ClapTrap&	ClapTrap::operator=(ClapTrap const &rSym)
     return (*this);
 }
 
-void attack(const std::string& target)
+void ClapTrap::attack(const std::string& target)
 {
-
+    std::cout << "ClapTrap " << this->name << " attacks " << target << ", causing " << this->damage << " points of damage!" << std::endl;
 }
 
-void takeDamage(unsigned int amount)
+void ClapTrap::takeDamage(unsigned int amount)
 {
-    
+    std::cout << "ClapTrap " << this->name << " take " << amount << " damage!" << std::endl;
 }
 
-void beRepaired(unsigned int amount)
+void ClapTrap::beRepaired(unsigned int amount)
 {
-            
+     std::cout << "ClapTrap " << this->name << " repaired " << amount << " hp!" << std::endl;     
 }

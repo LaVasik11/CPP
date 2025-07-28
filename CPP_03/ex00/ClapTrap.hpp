@@ -6,7 +6,7 @@
 /*   By: gkankia <gkankia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 16:02:51 by gkankia           #+#    #+#             */
-/*   Updated: 2025/07/24 16:02:52 by gkankia          ###   ########.fr       */
+/*   Updated: 2025/07/28 15:50:21 by gkankia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ class ClapTrap
 {
     public:
         ClapTrap(std::string name);
+        ClapTrap();
 		~ClapTrap();
 		ClapTrap(ClapTrap const &src);
 		ClapTrap&	operator=(ClapTrap const &rSym);

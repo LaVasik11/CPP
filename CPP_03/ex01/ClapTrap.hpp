@@ -6,7 +6,7 @@
 /*   By: georgy-kankiya <georgy-kankiya@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 16:02:51 by gkankia           #+#    #+#             */
-/*   Updated: 2025/08/02 17:15:39 by georgy-kank      ###   ########.fr       */
+/*   Updated: 2025/08/02 17:22:36 by georgy-kank      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ class ClapTrap
 		void        setEnergyPoints(int ep);
 		void	    setAttackDamage(int damage);
         
-    private:
+    protected:
         std::string name;
         int         hp;
         int         ep;

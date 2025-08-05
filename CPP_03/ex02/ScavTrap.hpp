@@ -1,31 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gkankia <gkankia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/24 15:09:52 by gkankia           #+#    #+#             */
-/*   Updated: 2025/08/05 15:27:24 by gkankia          ###   ########.fr       */
+/*   Created: 2025/08/05 15:22:48 by gkankia           #+#    #+#             */
+/*   Updated: 2025/08/05 15:51:03 by gkankia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef SCAVTRAP_HPP
+#define SCAVTRAP_HPP
+
 #include "ClapTrap.hpp"
 
-int main()
+class ScavTrap : public ClapTrap 
 {
-    ClapTrap    hero("Name1");
+	public:
+		ScavTrap(std::string name);
+		ScavTrap(ScavTrap const &src);
+		~ScavTrap();
 
-    hero.setAttackDamage(2);
+		ScavTrap & operator=(ScavTrap const &rSym);
+		
+		void	attack(const std::string &target);
+		void	guardGate();
+	private:
+};
 
-    hero.attack("Name2");
-    hero.takeDamage(3);
-    hero.beRepaired(1);
-    hero.beRepaired(1);
-    hero.attack("Name3");
-    hero.takeDamage(5);
-    hero.attack("Name3");
-    hero.takeDamage(7);
-    hero.attack("Name3");
-    return (0);
-}
+#endif

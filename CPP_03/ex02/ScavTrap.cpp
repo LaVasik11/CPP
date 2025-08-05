@@ -6,7 +6,7 @@
 /*   By: gkankia <gkankia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 15:22:45 by gkankia           #+#    #+#             */
-/*   Updated: 2025/08/05 15:53:42 by gkankia          ###   ########.fr       */
+/*   Updated: 2025/08/05 15:53:54 by gkankia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,6 @@ void	ScavTrap::attack(const std::string &target)
     else
         std::cout << "ClapTrap " << this->name << " is dead!" << std::endl;
 }
-
 
 void	ScavTrap::guardGate()
 {

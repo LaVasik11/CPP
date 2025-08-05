@@ -6,12 +6,12 @@
 /*   By: gkankia <gkankia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 15:22:48 by gkankia           #+#    #+#             */
-/*   Updated: 2025/08/05 15:51:23 by gkankia          ###   ########.fr       */
+/*   Updated: 2025/08/05 16:49:18 by gkankia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SCAVTRAP_HPP
-#define SCAVTRAP_HPP
+#ifndef SCAV_TRAP_HPP
+#define SCAV_TRAP_HPP
 
 #include "ClapTrap.hpp"
 

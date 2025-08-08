@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ScavTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gkankia <gkankia@student.42.fr>            +#+  +:+       +#+        */
+/*   By: georgy-kankiya <georgy-kankiya@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 15:22:45 by gkankia           #+#    #+#             */
-/*   Updated: 2025/08/05 15:53:54 by gkankia          ###   ########.fr       */
+/*   Updated: 2025/08/08 17:11:19 by georgy-kank      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,17 +15,27 @@
 ScavTrap::ScavTrap(std::string name) : ClapTrap()
 {
 	std::cout << "ScavTrap constructor called for " << name << std::endl;
-	this->setName(name);
-	this->setHitPoints(100);
-	this->setEnergyPoints(50);
-	this->setAttackDamage(20);
+	this->name = name;
+	this->hp = 100;
+	this->ep = 50;
+	this->damage = 20;
 }
 
-ScavTrap::ScavTrap(ScavTrap const &src) : ClapTrap(src.getName()) {
+ScavTrap::ScavTrap(ScavTrap const &src) : ClapTrap(src.getName())
+{
 	*this = src;
 }
 
-ScavTrap::~ScavTrap() {
+ScavTrap::ScavTrap()
+{
+	std::cout << "ScavTrap Defaut constructor called" << std::endl;
+    this->hp = 100;
+    this->ep = 50;
+    this->damage = 20;
+}
+
+ScavTrap::~ScavTrap()
+{
 	std::cout << "ScavTrap Destructor called for " << this->name << std::endl;
 }
 

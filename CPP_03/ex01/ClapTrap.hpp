@@ -6,7 +6,7 @@
 /*   By: georgy-kankiya <georgy-kankiya@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 16:02:51 by gkankia           #+#    #+#             */
-/*   Updated: 2025/08/02 17:22:36 by georgy-kank      ###   ########.fr       */
+/*   Updated: 2025/08/02 17:38:37 by georgy-kank      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ class ClapTrap
         ClapTrap(std::string name);
         ClapTrap();
 		~ClapTrap();
+        
 		ClapTrap(ClapTrap const &src);
 		ClapTrap&	operator=(ClapTrap const &rSym);
 

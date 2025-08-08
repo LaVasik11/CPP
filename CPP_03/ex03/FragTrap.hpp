@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   FragTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gkankia <gkankia@student.42.fr>            +#+  +:+       +#+        */
+/*   By: georgy-kankiya <georgy-kankiya@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 15:42:29 by gkankia           #+#    #+#             */
-/*   Updated: 2025/08/05 16:55:39 by gkankia          ###   ########.fr       */
+/*   Updated: 2025/08/08 17:05:15 by georgy-kank      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #include "ClapTrap.hpp"
 
 class FragTrap : public ClapTrap 
-{cd
+{
 	public:
 		FragTrap(std::string name);
 		FragTrap(FragTrap const &src);

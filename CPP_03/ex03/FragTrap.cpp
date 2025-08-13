@@ -6,7 +6,7 @@
 /*   By: gkankia <gkankia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 15:55:24 by gkankia           #+#    #+#             */
-/*   Updated: 2025/08/05 15:55:25 by gkankia          ###   ########.fr       */
+/*   Updated: 2025/08/13 17:05:04 by gkankia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,10 @@
 FragTrap::FragTrap(std::string name) : ClapTrap()
 {
 	std::cout << "FragTrap constructor called for " << name << std::endl;
-	this->setName(name);
-	this->setHitPoints(100);
-	this->setEnergyPoints(100);
-	this->setAttackDamage(30);
+	this->name = name;
+	this->hp = 100;
+	this->ep = 100;
+	this->damage = 30;
 }
 
 FragTrap::FragTrap(FragTrap const &src) : ClapTrap(src.getName()) {

@@ -6,7 +6,7 @@
 /*   By: gkankia <gkankia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 15:17:01 by gkankia           #+#    #+#             */
-/*   Updated: 2025/08/05 15:30:58 by gkankia          ###   ########.fr       */
+/*   Updated: 2025/08/13 18:45:13 by gkankia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ ClapTrap::ClapTrap(std::string name)
 
 ClapTrap::~ClapTrap()
 {
-    std::cout << "Destructor called for " << this->name << std::endl;
+    std::cout << "ClapTrap Destructor called for " << this->name << std::endl;
 }
 
 ClapTrap::ClapTrap(ClapTrap const &src)

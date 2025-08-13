@@ -6,7 +6,7 @@
 /*   By: gkankia <gkankia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/13 17:24:42 by gkankia           #+#    #+#             */
-/*   Updated: 2025/08/13 17:24:43 by gkankia          ###   ########.fr       */
+/*   Updated: 2025/08/13 17:28:52 by gkankia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,7 @@ class DiamondTrap : public ScavTrap, public FragTrap
 		DiamondTrap();
 		~DiamondTrap();
 
-		DiamondTrap &	operator=(DiamondTrap const &rSym);
-
+		using	ClapTrap::operator=;
         using	ScavTrap::attack;
 
 		void	whoAmI();

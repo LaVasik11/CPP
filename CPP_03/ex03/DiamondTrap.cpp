@@ -6,7 +6,7 @@
 /*   By: gkankia <gkankia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/13 17:17:54 by gkankia           #+#    #+#             */
-/*   Updated: 2025/08/13 17:24:12 by gkankia          ###   ########.fr       */
+/*   Updated: 2025/08/13 17:26:56 by gkankia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,5 +52,5 @@ DiamondTrap &	DiamondTrap::operator=(DiamondTrap const &rSym) {
 void    DiamondTrap::whoAmI()
 {
     std::cout << "DiamondTrap name: " << this->name << std::endl;
-    std::cout << "DiamondTrap ClapTrap name: " << ClapTrap::getName() << std::endl;
+    std::cout << "DiamondTrap ClapTrap name: " << ClapTrap::name << std::endl;
 }

@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   FragTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gkankia <gkankia@student.42.fr>            +#+  +:+       +#+        */
+/*   By: georgy-kankiya <georgy-kankiya@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 15:55:24 by gkankia           #+#    #+#             */
-/*   Updated: 2025/08/13 17:05:33 by gkankia          ###   ########.fr       */
+/*   Updated: 2025/08/15 22:24:51 by georgy-kank      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "FragTrap.hpp"
 
-FragTrap::FragTrap(std::string name) : ClapTrap()
+FragTrap::FragTrap(std::string name) : ClapTrap(name)
 {
 	std::cout << "FragTrap constructor called for " << name << std::endl;
 	this->name = name;
@@ -21,9 +21,16 @@ FragTrap::FragTrap(std::string name) : ClapTrap()
 	this->damage = 30;
 }
 
-FragTrap::FragTrap(FragTrap const &src) : ClapTrap(src.getName()) {
+FragTrap::FragTrap(FragTrap const &src) : ClapTrap(src.getName())
+{
 	*this = src;
 }
+
+FragTrap::FragTrap()
+{
+	std::cout << "FragTrap default constructor called" << std::endl;
+}
+
 
 FragTrap::~FragTrap() {
 	std::cout << "FragTrap Destructor called for " << this->name << std::endl;

@@ -6,7 +6,7 @@
 /*   By: georgy-kankiya <georgy-kankiya@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 15:22:48 by gkankia           #+#    #+#             */
-/*   Updated: 2025/08/08 17:08:10 by georgy-kank      ###   ########.fr       */
+/*   Updated: 2025/08/15 22:08:28 by georgy-kank      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 #include "ClapTrap.hpp"
 
-class ScavTrap : public ClapTrap 
+class ScavTrap : virtual public ClapTrap 
 {
 	public:
 		ScavTrap(std::string name);

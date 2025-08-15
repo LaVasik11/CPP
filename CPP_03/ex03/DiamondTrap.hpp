@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   DiamondTrap.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gkankia <gkankia@student.42.fr>            +#+  +:+       +#+        */
+/*   By: georgy-kankiya <georgy-kankiya@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/13 17:24:42 by gkankia           #+#    #+#             */
-/*   Updated: 2025/08/13 17:28:52 by gkankia          ###   ########.fr       */
+/*   Updated: 2025/08/15 22:21:46 by georgy-kank      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,7 @@ class DiamondTrap : public ScavTrap, public FragTrap
 		DiamondTrap();
 		~DiamondTrap();
 
-		using	ClapTrap::operator=;
-        using	ScavTrap::attack;
+        DiamondTrap &	operator=(DiamondTrap const &rSym);
 
 		void	whoAmI();
 	private:

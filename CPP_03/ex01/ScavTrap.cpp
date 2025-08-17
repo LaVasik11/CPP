@@ -6,16 +6,15 @@
 /*   By: georgy-kankiya <georgy-kankiya@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 15:22:45 by gkankia           #+#    #+#             */
-/*   Updated: 2025/08/08 17:12:05 by georgy-kank      ###   ########.fr       */
+/*   Updated: 2025/08/17 20:48:57 by georgy-kank      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScavTrap.hpp"
 
-ScavTrap::ScavTrap(std::string name) : ClapTrap()
+ScavTrap::ScavTrap(std::string name) : ClapTrap(name)
 {
 	std::cout << "ScavTrap constructor called for " << name << std::endl;
-	this->name = name;
 	this->hp = 100;
 	this->ep = 50;
 	this->damage = 20;
@@ -26,7 +25,7 @@ ScavTrap::ScavTrap(ScavTrap const &src) : ClapTrap(src.getName())
 	*this = src;
 }
 
-ScavTrap::ScavTrap()
+ScavTrap::ScavTrap(): ClapTrap()
 {
 	std::cout << "ScavTrap Defaut constructor called" << std::endl;
     this->hp = 100;

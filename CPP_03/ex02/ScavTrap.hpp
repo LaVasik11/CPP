@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ScavTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gkankia <gkankia@student.42.fr>            +#+  +:+       +#+        */
+/*   By: georgy-kankiya <georgy-kankiya@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 15:22:48 by gkankia           #+#    #+#             */
-/*   Updated: 2025/08/05 16:49:30 by gkankia          ###   ########.fr       */
+/*   Updated: 2025/08/17 20:50:09 by georgy-kank      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ class ScavTrap : public ClapTrap
 	public:
 		ScavTrap(std::string name);
 		ScavTrap(ScavTrap const &src);
+		ScavTrap();
 		~ScavTrap();
 
 		ScavTrap & operator=(ScavTrap const &rSym);

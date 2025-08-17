@@ -3,16 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gkankia <gkankia@student.42.fr>            +#+  +:+       +#+        */
+/*   By: georgy-kankiya <georgy-kankiya@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 15:09:52 by gkankia           #+#    #+#             */
-/*   Updated: 2025/08/05 16:52:47 by gkankia          ###   ########.fr       */
+/*   Updated: 2025/08/17 21:00:04 by georgy-kank      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 #include "ScavTrap.hpp"
 #include "FragTrap.hpp"
+#include "DiamondTrap.hpp"
 
 int main()
 {
@@ -44,5 +45,18 @@ int main()
     hero3.attack("enemy4");
     hero3.takeDamage(100);
     hero3.attack("enemy4");
+    
+    std::cout << "\n-----------------------------------------\n";
+
+    DiamondTrap diamond("diamond");
+    
+    diamond.attack("enemy1");
+    diamond.takeDamage(10);
+    diamond.beRepaired(30);
+    diamond.attack("enemy2");
+    diamond.attack("enemy3");
+    diamond.takeDamage(120);
+    diamond.beRepaired(10);
+    diamond.attack("enemy1");
     return (0);
 }

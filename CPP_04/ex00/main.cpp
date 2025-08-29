@@ -4,7 +4,7 @@
 
 int main()
 {
-    Animal  animal("abracadabra!!!");
+    Animal  animal;
     Dog     dog1;
     Cat     cat1;
     Dog     dog2;

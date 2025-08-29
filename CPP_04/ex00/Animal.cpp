@@ -27,7 +27,7 @@ Animal &	Animal::operator=(Animal const &src)
 	return (*this);
 }
 
-std::string	Animal::getType()
+std::string	Animal::getType() const
 {
 	return (this->type);
 }

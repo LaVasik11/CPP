@@ -6,7 +6,7 @@
 /*   By: georgy-kankiya <georgy-kankiya@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 15:42:29 by gkankia           #+#    #+#             */
-/*   Updated: 2025/08/15 22:19:18 by georgy-kank      ###   ########.fr       */
+/*   Updated: 2025/08/27 14:35:02 by georgy-kank      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ class FragTrap : virtual public ClapTrap
 		FragTrap();
 		~FragTrap();
 
-		FragTrap & operator=(FragTrap const &rSym);
+		FragTrap & operator=(FragTrap const &src);
 		
 		void	attack(const std::string &target);
         void highFivesGuys(void);

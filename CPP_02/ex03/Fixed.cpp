@@ -6,7 +6,7 @@
 /*   By: georgy-kankiya <georgy-kankiya@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 16:07:38 by gkankia           #+#    #+#             */
-/*   Updated: 2025/07/17 13:28:37 by georgy-kank      ###   ########.fr       */
+/*   Updated: 2025/08/27 14:35:02 by georgy-kank      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,10 +32,10 @@ Fixed::Fixed(Fixed const &src)
 	*this = src;
 }
 
-Fixed&	Fixed::operator=(Fixed const &rSym)
+Fixed&	Fixed::operator=(Fixed const &src)
 {
-	if (this != &rSym)
-		this->value = rSym.getRawBits();
+	if (this != &src)
+		this->value = src.getRawBits();
 	return (*this);
 }
 
@@ -59,70 +59,70 @@ int		Fixed::toInt() const
 	return (this->value >> bits);
 }
 
-std::ostream&	operator<<(std::ostream& o, Fixed const &rSym)
+std::ostream&	operator<<(std::ostream& o, Fixed const &src)
 {
-	o << rSym.toFloat();
+	o << src.toFloat();
 	return (o);
 }
 
-Fixed	Fixed::operator+(Fixed const &rSym) const
+Fixed	Fixed::operator+(Fixed const &src) const
 {
-	return (Fixed(this->toFloat() + rSym.toFloat()));
+	return (Fixed(this->toFloat() + src.toFloat()));
 }
 
-Fixed	Fixed::operator-(Fixed const &rSym) const
+Fixed	Fixed::operator-(Fixed const &src) const
 {
-	return (Fixed(this->toFloat() - rSym.toFloat()));
+	return (Fixed(this->toFloat() - src.toFloat()));
 }
 
-Fixed	Fixed::operator*(Fixed const &rSym) const
+Fixed	Fixed::operator*(Fixed const &src) const
 {
-	return (Fixed(this->toFloat() * rSym.toFloat()));
+	return (Fixed(this->toFloat() * src.toFloat()));
 }
 
-Fixed	Fixed::operator/(Fixed const &rSym) const
+Fixed	Fixed::operator/(Fixed const &src) const
 {
-	return (Fixed(this->toFloat() / rSym.toFloat()));
+	return (Fixed(this->toFloat() / src.toFloat()));
 }
 
-bool	Fixed::operator<(Fixed const &rSym) const
+bool	Fixed::operator<(Fixed const &src) const
 {
-	if (this->getRawBits() < rSym.getRawBits())
+	if (this->getRawBits() < src.getRawBits())
 		return (true);
 	return (false);
 }
 
-bool	Fixed::operator>(Fixed const &rSym) const
+bool	Fixed::operator>(Fixed const &src) const
 {
-	if (this->getRawBits() > rSym.getRawBits())
+	if (this->getRawBits() > src.getRawBits())
 		return (true);
 	return (false);
 }
 
-bool	Fixed::operator<=(Fixed const &rSym) const
+bool	Fixed::operator<=(Fixed const &src) const
 {
-	if (this->getRawBits() <= rSym.getRawBits())
+	if (this->getRawBits() <= src.getRawBits())
 		return (true);
 	return (false);
 }
 
-bool	Fixed::operator>=(Fixed const &rSym) const
+bool	Fixed::operator>=(Fixed const &src) const
 {
-	if (this->getRawBits() >= rSym.getRawBits())
+	if (this->getRawBits() >= src.getRawBits())
 		return (true);
 	return (false);
 }
 
-bool	Fixed::operator==(Fixed const &rSym) const
+bool	Fixed::operator==(Fixed const &src) const
 {
-	if (this->getRawBits() == rSym.getRawBits())
+	if (this->getRawBits() == src.getRawBits())
 		return (true);
 	return (false);
 }
 
-bool	Fixed::operator!=(Fixed const &rSym) const
+bool	Fixed::operator!=(Fixed const &src) const
 {
-	if (this->getRawBits() != rSym.getRawBits())
+	if (this->getRawBits() != src.getRawBits())
 		return (true);
 	return (false);
 }

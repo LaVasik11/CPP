@@ -6,7 +6,7 @@
 /*   By: georgy-kankiya <georgy-kankiya@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 16:02:51 by gkankia           #+#    #+#             */
-/*   Updated: 2025/08/02 17:38:37 by georgy-kank      ###   ########.fr       */
+/*   Updated: 2025/08/27 14:35:02 by georgy-kank      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ class ClapTrap
 		~ClapTrap();
         
 		ClapTrap(ClapTrap const &src);
-		ClapTrap&	operator=(ClapTrap const &rSym);
+		ClapTrap&	operator=(ClapTrap const &src);
 
         void attack(const std::string& target);
         void takeDamage(unsigned int amount);

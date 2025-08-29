@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gkankia <gkankia@student.42.fr>            +#+  +:+       +#+        */
+/*   By: georgy-kankiya <georgy-kankiya@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 15:17:01 by gkankia           #+#    #+#             */
-/*   Updated: 2025/08/13 18:45:13 by gkankia          ###   ########.fr       */
+/*   Updated: 2025/08/27 14:35:02 by georgy-kank      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,13 +39,13 @@ ClapTrap::ClapTrap(ClapTrap const &src)
     *this = src;
 }
 
-ClapTrap&	ClapTrap::operator=(ClapTrap const &rSym)
+ClapTrap&	ClapTrap::operator=(ClapTrap const &src)
 {
-    if (this != &rSym)
+    if (this != &src)
     {
-        this->hp = rSym.hp;
-        this->ep = rSym.ep;
-        this->damage = rSym.damage;
+        this->hp = src.hp;
+        this->ep = src.ep;
+        this->damage = src.damage;
     }
     return (*this);
 }

@@ -6,7 +6,7 @@
 /*   By: georgy-kankiya <georgy-kankiya@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/13 17:24:42 by gkankia           #+#    #+#             */
-/*   Updated: 2025/08/17 20:56:44 by georgy-kank      ###   ########.fr       */
+/*   Updated: 2025/08/27 14:35:02 by georgy-kank      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class DiamondTrap : public ScavTrap, public FragTrap
 		DiamondTrap();
 		~DiamondTrap();
 
-        DiamondTrap &	operator=(DiamondTrap const &rSym);
+        DiamondTrap &	operator=(DiamondTrap const &src);
 
 		using ScavTrap::attack;
 		void	whoAmI();

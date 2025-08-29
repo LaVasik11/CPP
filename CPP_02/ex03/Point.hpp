@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Point.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gkankia <gkankia@student.42.fr>            +#+  +:+       +#+        */
+/*   By: georgy-kankiya <georgy-kankiya@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 16:08:09 by gkankia           #+#    #+#             */
-/*   Updated: 2025/07/16 16:08:10 by gkankia          ###   ########.fr       */
+/*   Updated: 2025/08/27 14:35:02 by georgy-kank      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ class Point
         Point();
 		~Point();
 		Point(Point const &src);
-		Point&	operator=(Point const &rSym);
+		Point&	operator=(Point const &src);
         Point(float const x, float const y);
         
         Fixed const getX() const;

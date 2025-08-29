@@ -6,7 +6,7 @@
 /*   By: georgy-kankiya <georgy-kankiya@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 15:55:24 by gkankia           #+#    #+#             */
-/*   Updated: 2025/08/17 20:51:36 by georgy-kank      ###   ########.fr       */
+/*   Updated: 2025/08/27 14:35:02 by georgy-kank      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,12 +38,12 @@ FragTrap::~FragTrap() {
 	std::cout << "FragTrap Destructor called for " << this->name << std::endl;
 }
 
-FragTrap &	FragTrap::operator=(FragTrap const &rSym) {
-	if (this != &rSym) {
-		this->name = rSym.getName();
-		this->hp = rSym.getHitPoints();
-		this->ep = rSym.getEnergyPoints();
-		this->damage = rSym.getAttackDamage();
+FragTrap &	FragTrap::operator=(FragTrap const &src) {
+	if (this != &src) {
+		this->name = src.getName();
+		this->hp = src.getHitPoints();
+		this->ep = src.getEnergyPoints();
+		this->damage = src.getAttackDamage();
 	}
 	return *this;
 }

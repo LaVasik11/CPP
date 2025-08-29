@@ -6,7 +6,7 @@
 /*   By: georgy-kankiya <georgy-kankiya@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/13 17:17:54 by gkankia           #+#    #+#             */
-/*   Updated: 2025/08/15 22:16:31 by georgy-kank      ###   ########.fr       */
+/*   Updated: 2025/08/27 14:35:02 by georgy-kank      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,13 +36,13 @@ DiamondTrap::~DiamondTrap()
 	std::cout << "DiamondTrap Destructor called for " << this->name << std::endl;
 }
 
-DiamondTrap &	DiamondTrap::operator=(DiamondTrap const &rSym)
+DiamondTrap &	DiamondTrap::operator=(DiamondTrap const &src)
 {
-	if (this != &rSym) {
-		this->name = rSym.getName();
-		this->hp = rSym.getHitPoints();
-		this->ep = rSym.getEnergyPoints();
-		this->damage = rSym.getAttackDamage();
+	if (this != &src) {
+		this->name = src.getName();
+		this->hp = src.getHitPoints();
+		this->ep = src.getEnergyPoints();
+		this->damage = src.getAttackDamage();
 	}
 	return (*this);
 }

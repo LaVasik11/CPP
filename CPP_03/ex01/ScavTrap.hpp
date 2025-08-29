@@ -6,7 +6,7 @@
 /*   By: georgy-kankiya <georgy-kankiya@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 15:22:48 by gkankia           #+#    #+#             */
-/*   Updated: 2025/08/08 17:12:28 by georgy-kank      ###   ########.fr       */
+/*   Updated: 2025/08/27 14:35:02 by georgy-kank      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ class ScavTrap : public ClapTrap
 		ScavTrap();
 		~ScavTrap();
 
-		ScavTrap & operator=(ScavTrap const &rSym);
+		ScavTrap & operator=(ScavTrap const &src);
 		
 		void	attack(const std::string &target);
 		void	guardGate();

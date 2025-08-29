@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Point.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gkankia <gkankia@student.42.fr>            +#+  +:+       +#+        */
+/*   By: georgy-kankiya <georgy-kankiya@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 16:08:06 by gkankia           #+#    #+#             */
-/*   Updated: 2025/07/16 16:08:07 by gkankia          ###   ########.fr       */
+/*   Updated: 2025/08/27 14:35:02 by georgy-kank      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,10 @@ Point::Point(Point const &src)
 	*this = src;
 }
 
-Point&	Point::operator=(Point const &rSym)
+Point&	Point::operator=(Point const &src)
 {
-	if (this != &rSym)
-        new (this) Point(rSym.getX().toFloat(), rSym.getY().toFloat());
+	if (this != &src)
+        new (this) Point(src.getX().toFloat(), src.getY().toFloat());
     return (*this);
 }
 

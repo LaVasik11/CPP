@@ -6,31 +6,22 @@
 
 int main()
 {
-    Animal      animal;
-    Dog         dog1;
-    Dog         dog2;
-    Cat         cat1;
-    WrongAnimal wrongAnimal;
-    WrongCat    wrongCat;
-
-    std::cout << "\n------------------------------------------\n";
-    animal.makeSound();
-    std::cout << animal.getType() << std::endl;
-    std::cout << "\n------------------------------------------\n";
-    dog1.makeSound();
-    dog2.makeSound();
-    cat1.makeSound();
-    cat1.makeSound();
-    cat1.makeSound();
-    std::cout << "\n------------------------------------------\n";
-    std::cout << cat1.getType() << std::endl;
-    std::cout << dog1.getType() << std::endl;
-    std::cout << dog2.getType() << std::endl;
-    std::cout << "\n------------------------------------------\n";
-    wrongAnimal.makeSound();
-    std::cout << wrongAnimal.getType() << std::endl;
-    wrongCat.makeSound();
-    std::cout << wrongCat.getType() << std::endl;
-    std::cout << "\n------------------------------------------\n";
-
+    const Animal* meta1 = new Animal();
+    const Animal* j = new Dog();
+    const Animal* i = new Cat();
+    std::cout << j->getType() << " " << std::endl;
+    std::cout << i->getType() << " " << std::endl;
+    i->makeSound(); //will output the cat sound!
+    j->makeSound();
+    meta1->makeSound();
+    std::cout << "\n-------------------------------------------\n";
+    const WrongAnimal* meta2 = new WrongAnimal();
+    const Animal* k = new Dog();
+    const WrongAnimal* l = new WrongCat();
+    std::cout << k->getType() << " " << std::endl;
+    std::cout << l->getType() << " " << std::endl;
+    l->makeSound(); //will output the cat sound!
+    k->makeSound();
+    meta2->makeSound();
+    return 0;
 }

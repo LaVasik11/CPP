@@ -27,7 +27,7 @@ Cat &Cat::operator=(const Cat &src)
 		delete this->brain;
 		this->brain = new Brain(*src.brain);
 	}
-	return (*this);
+	return *this;
 }
 
 void Cat::makeSound() const
@@ -37,5 +37,5 @@ void Cat::makeSound() const
 
 Brain* Cat::getBrain() const
 {
-	return (this->brain);
+	return this->brain;
 }

@@ -27,7 +27,7 @@ Dog &Dog::operator=(const Dog &src)
 		delete this->brain;
 		this->brain = new Brain(*src.brain);
 	}
-	return (*this);
+	return *this;
 }
 
 void Dog::makeSound() const
@@ -37,5 +37,5 @@ void Dog::makeSound() const
 
 Brain* Dog::getBrain() const
 {
-	return (this->brain);
+	return this->brain;
 }

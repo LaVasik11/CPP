@@ -6,7 +6,7 @@
 /*   By: gkankia <gkankia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/29 15:18:27 by gkankia           #+#    #+#             */
-/*   Updated: 2025/06/29 16:42:38 by gkankia          ###   ########.fr       */
+/*   Updated: 2025/11/11 18:31:04 by gkankia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,14 @@ void	print_contact(std::string str)
 
 bool	is_valid_phone_number(const std::string& str)
 {
-	for (char c : str)
+	int	i;
+
+	i = 0;
+	while (str[i])
 	{
-		if (!std::isdigit(c) && c != ' ' && c != '-' && c != '.')
+		if (!std::isdigit(str[i]) && str[i] != ' ' && str[i] != '-' && str[i] != '.')
 			return false;
+		i++;
 	}
 	return true;
 }

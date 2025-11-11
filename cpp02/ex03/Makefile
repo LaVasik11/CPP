@@ -1,7 +1,7 @@
 NAME = bsp
 
 CXX = c++
-CXXFLAGS = -Wall -Wextra -Werror -std=c++98
+CXXFLAGS = -Wall -Wextra -Werror
 
 SRC = main.cpp Fixed.cpp Point.cpp bsp.cpp
 

@@ -1,4 +1,4 @@
-NAME = brain
+NAME = ptr
 
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror

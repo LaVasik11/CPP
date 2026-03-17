@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: georgy-kankiya <georgy-kankiya@student.    +#+  +:+       +#+        */
+/*   By: gkankia <gkankia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 15:17:01 by gkankia           #+#    #+#             */
-/*   Updated: 2025/08/27 14:35:02 by georgy-kank      ###   ########.fr       */
+/*   Updated: 2026/03/17 20:51:43 by gkankia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ ClapTrap::ClapTrap(std::string name)
     this->name = name;
     this->hp = 10;
     this->ep = 10;
-    this->damage = 0;
+    this->damage = 0; 
 }
 
 ClapTrap::~ClapTrap()

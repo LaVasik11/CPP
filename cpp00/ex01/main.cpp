@@ -6,7 +6,7 @@
 /*   By: gkankia <gkankia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/29 15:18:38 by gkankia           #+#    #+#             */
-/*   Updated: 2025/06/29 16:42:24 by gkankia          ###   ########.fr       */
+/*   Updated: 2026/03/17 18:07:58 by gkankia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,8 @@ int	main()
 			std::cout << "+-------------------------------------------+\n";
 			phonebook.show_contacts(count_contact);
 		}
+		else if (command == "EXIT")
+			break;
 		else
 			std::cout << "Invalid command\n";
 	}

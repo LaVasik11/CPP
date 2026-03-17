@@ -6,17 +6,16 @@
 /*   By: gkankia <gkankia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 15:22:56 by gkankia           #+#    #+#             */
-/*   Updated: 2025/07/16 15:22:58 by gkankia          ###   ########.fr       */
+/*   Updated: 2026/03/17 19:37:52 by gkankia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
 
-int main( void ) 
+int main( void )
 {
 	Fixed a;
 	Fixed const b( Fixed( 5.05f ) * Fixed( 2 ) );
-
 	std::cout << a << std::endl;
 	std::cout << ++a << std::endl;
 	std::cout << a << std::endl;

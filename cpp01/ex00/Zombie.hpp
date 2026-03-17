@@ -6,7 +6,7 @@
 /*   By: gkankia <gkankia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/08 17:47:31 by gkankia           #+#    #+#             */
-/*   Updated: 2025/07/08 17:47:32 by gkankia          ###   ########.fr       */
+/*   Updated: 2026/03/17 18:26:06 by gkankia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,11 @@ class Zombie {
 		Zombie(str name);
 		~Zombie();
 
-		Zombie* newZombie(str name);
+		Zombie*	newZombie(str name);
 		void	randomChump(str name);
-	private:
 		void	announce();
-		str	name;
+	private:
+		str		name;
 };
 
 

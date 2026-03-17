@@ -6,7 +6,7 @@
 /*   By: gkankia <gkankia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 18:29:53 by gkankia           #+#    #+#             */
-/*   Updated: 2025/07/12 18:29:54 by gkankia          ###   ########.fr       */
+/*   Updated: 2026/03/17 19:23:45 by gkankia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,13 +46,10 @@ void	Harl::complain(std::string level)
 	{
 	case 0:
 		this->debug();
-		break;
 	case 1:
 		this->info();
-		break;
 	case 2:
 		this->warning();
-		break;
 	case 3:
 		this->error();
 		break;

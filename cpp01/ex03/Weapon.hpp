@@ -6,7 +6,7 @@
 /*   By: gkankia <gkankia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/08 16:44:53 by gkankia           #+#    #+#             */
-/*   Updated: 2025/07/08 17:01:03 by gkankia          ###   ########.fr       */
+/*   Updated: 2026/03/17 18:46:38 by gkankia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ class Weapon
         void                setType(std::string type);
 
     private:
-        std::string type;
+        std::string         type;
 };
 
 #endif

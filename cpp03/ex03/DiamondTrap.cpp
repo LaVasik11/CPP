@@ -15,7 +15,7 @@
 DiamondTrap::DiamondTrap(std::string name) : ClapTrap(name + "_clap_name")
 {
 	std::cout << "DiamondTrap constructor called for " << name << std::endl;
-	this->name = ClapTrap::name;
+	this->name = name;
 	this->hp = FragTrap::hp;
 	this->ep = ScavTrap::ep;
 	this->damage = FragTrap::damage;

@@ -58,5 +58,7 @@ int main()
     diamond.takeDamage(120);
     diamond.beRepaired(10);
     diamond.attack("enemy1");
+
+    diamond.whoAmI();
     return (0);
 }

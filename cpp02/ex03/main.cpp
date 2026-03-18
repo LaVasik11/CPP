@@ -21,14 +21,34 @@ bool bsp(Point const a, Point const b, Point const c, Point const point);
 
 int	main()
 {
-	Point	a(2.02f, 0.83f);
-	Point	b(2.66f, 1.68f);
-	Point	c(1.24f, 1.91f);
-	Point	point(2.07f, 1.46f);
-
-	if (bsp(a, b, c, point))
-		std::cout << "Le point p est dans le triange." << std::endl;
+	Point a1(0.0f, 0.0f);
+	Point b1(4.0f, 0.0f);
+	Point c1(0.0f, 4.0f);
+	Point p1(1.0f, 1.0f);
+	if (bsp(a1, b1, c1, p1))
+		std::cout << "point in a triangle" << std::endl;
 	else
-		std::cout << "Le point p n'est pas dans le triangle." << std::endl;
+		std::cout << "point not in a triangle" << std::endl;
+
+
+	Point a2(0.0f, 0.0f);
+	Point b2(4.0f, 0.0f);
+	Point c2(0.0f, 4.0f);
+	Point p2(5.0f, 5.0f);
+	if (bsp(a2, b2, c2, p2))
+		std::cout << "point in a triangle" << std::endl;
+	else
+		std::cout << "point not in a triangle" << std::endl;
+
+
+	Point a3(0.0f, 0.0f);
+	Point b3(4.0f, 0.0f);
+	Point c3(0.0f, 4.0f);
+	Point p3(2.0f, 0.0f);
+	if (bsp(a3, b3, c3, p3))
+		std::cout << "point in a triangle" << std::endl;
+	else
+		std::cout << "point not in a triangle" << std::endl;
+
 	return (0);
 }

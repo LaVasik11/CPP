@@ -20,7 +20,7 @@ ScavTrap::ScavTrap(std::string name) : ClapTrap(name)
 	this->damage = 20;
 }
 
-ScavTrap::ScavTrap(ScavTrap const &src) : ClapTrap(src.getName())
+ScavTrap::ScavTrap(ScavTrap const &src) : ClapTrap(src)
 {
 	*this = src;
 }
@@ -38,14 +38,13 @@ ScavTrap::~ScavTrap()
 	std::cout << "ScavTrap Destructor called for " << this->name << std::endl;
 }
 
-ScavTrap &	ScavTrap::operator=(ScavTrap const &src) {
-	if (this != &src) {
-		this->name = src.getName();
-		this->hp = src.getHitPoints();
-		this->ep = src.getEnergyPoints();
-		this->damage = src.getAttackDamage();
-	}
-	return *this;
+ScavTrap & ScavTrap::operator=(ScavTrap const &src)
+{
+    if (this != &src)
+    {
+        ClapTrap::operator=(src);
+    }
+    return (*this);
 }
 
 void	ScavTrap::attack(const std::string &target)
@@ -58,11 +57,11 @@ void	ScavTrap::attack(const std::string &target)
             this->ep--;
         }
         else
-            std::cout << "ClapTrap " << this->name << " doesn't have enough energy points." << std::endl;
-        std::cout << "ClapTrap " << this->name << " has " << this->ep << " energy points." << std::endl;
+            std::cout << "ScavTrap " << this->name << " doesn't have enough energy points." << std::endl;
+        std::cout << "ScavTrap " << this->name << " has " << this->ep << " energy points." << std::endl;
     }
     else
-        std::cout << "ClapTrap " << this->name << " is dead!" << std::endl;
+        std::cout << "ScavTrap " << this->name << " is dead!" << std::endl;
 }
 
 void	ScavTrap::guardGate()

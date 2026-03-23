@@ -20,7 +20,7 @@ class ClapTrap
     public:
         ClapTrap(std::string name);
         ClapTrap();
-		~ClapTrap();
+		virtual ~ClapTrap();
         
 		ClapTrap(ClapTrap const &src);
 		ClapTrap&	operator=(ClapTrap const &src);

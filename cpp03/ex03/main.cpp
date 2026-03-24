@@ -49,10 +49,15 @@ int main()
     std::cout << "\n-----------------------------------------\n";
 
     DiamondTrap diamond("diamond");
-    printf("DiamondTrap name: %s\n", diamond.getName().c_str());
-    printf("DiamondTrap hit points: %d\n", diamond.getHitPoints());
-    printf("DiamondTrap energy points: %d\n", diamond.getEnergyPoints());
-    printf("DiamondTrap attack damage: %d\n", diamond.getAttackDamage());
+    
+    diamond.attack("enemy1");
+    diamond.takeDamage(10);
+    diamond.beRepaired(30);
+    diamond.attack("enemy2");
+    diamond.attack("enemy3");
+    diamond.takeDamage(120);
+    diamond.beRepaired(10);
+    diamond.attack("enemy1");
 
     diamond.whoAmI();
     return (0);

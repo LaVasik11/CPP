@@ -27,7 +27,7 @@ ScavTrap::ScavTrap(ScavTrap const &src) : ClapTrap(src)
 
 ScavTrap::ScavTrap(): ClapTrap()
 {
-	std::cout << "ScavTrap Defaut constructor called" << std::endl;
+	std::cout << "ScavTrap Default constructor called" << std::endl;
     this->hp = 100;
     this->ep = 50;
     this->damage = 20;

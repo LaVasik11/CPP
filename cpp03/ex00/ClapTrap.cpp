@@ -14,7 +14,7 @@
 
 ClapTrap::ClapTrap()
 {
-	std::cout << "Defaut constructor called for" << std::endl;
+	std::cout << "Default constructor called for" << std::endl;
     this->hp = 10;
     this->ep = 10;
     this->damage = 0;

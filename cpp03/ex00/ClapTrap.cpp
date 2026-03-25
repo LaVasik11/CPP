@@ -12,21 +12,14 @@
 
 #include "ClapTrap.hpp"
 
-ClapTrap::ClapTrap()
+ClapTrap::ClapTrap() : name("default"), hp(10), ep(10), damage(0)
 {
-	std::cout << "Default constructor called for" << std::endl;
-    this->hp = 10;
-    this->ep = 10;
-    this->damage = 0;
+    std::cout << "Default constructor called" << std::endl;
 }
 
-ClapTrap::ClapTrap(std::string name)
+ClapTrap::ClapTrap(std::string name) : name(name), hp(10), ep(10), damage(0)
 {
-	std::cout << "Constructor called for " << name << std::endl;
-    this->name = name;
-    this->hp = 10;
-    this->ep = 10;
-    this->damage = 0; 
+    std::cout << "Constructor called for " << name << std::endl;
 }
 
 ClapTrap::~ClapTrap()

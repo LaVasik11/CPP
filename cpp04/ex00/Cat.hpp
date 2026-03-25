@@ -13,8 +13,6 @@ public:
 	Cat& operator=(Cat const &src);
 
     void	makeSound() const;
-private:
-    std::string type;
 };
 
 #endif

@@ -16,7 +16,6 @@ public:
     void	makeSound() const;
 	Brain* getBrain() const;
 private:
-    std::string type;
 	Brain       *brain;
 };
 

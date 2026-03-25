@@ -25,7 +25,7 @@ FragTrap::FragTrap(FragTrap const &src) : ClapTrap(src.getName())
 	*this = src;
 }
 
-FragTrap::FragTrap()
+FragTrap::FragTrap() : ClapTrap()
 {
 	std::cout << "FragTrap default constructor called" << std::endl;
 	this->hp = 100;
